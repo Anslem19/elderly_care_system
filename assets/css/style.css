@@ -1,0 +1,489 @@
+/* ==========================================
+   1. LOGIN PAGE
+   ========================================== */
+
+
+/* Base page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Container card for the login form */
+.login-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 320px;
+}
+
+/* Styling individual form groups */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #34495e;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Note for the default university credentials */
+.credential-note {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #7f8c8d;
+    text-align: center;
+    background: #ecf0f1;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* ==========================================
+   2. NAVIGATION BAR
+   ========================================== */
+
+
+/* Styling for the Navigation Bar */
+.navbar {
+    width: 100%;
+    background-color: #2c3e50;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.navbar-links a:hover {
+    color: #3498db;
+}
+
+/* Adjusting the main content container below the fixed navbar */
+.main-container {
+    margin-top: 80px;
+    padding: 40px;
+    text-align: center;
+    max-width: 800px;
+}
+
+.dashboard-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    width: 220px;
+    text-align: left;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 8px 14px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* ==========================================
+   4. HELP & DOCUMENTATION STYLES
+   ========================================== */
+.help-container {
+    margin-top: 100px; /* Leaves space below the fixed navbar */
+    padding: 20px;
+    max-width: 800px;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.help-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.help-card h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    font-weight: bold;
+    color: #2980b9;
+    margin-bottom: 5px;
+}
+
+.faq-answer {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Fix to ensure the flexbox layout doesn't break normal page scrolls */
+.scrollable-page {
+    display: block !important;
+    height: auto !important;
+    background-color: #f4f7f6;
+    padding-bottom: 50px;
+}
+
+/* ==========================================
+   5. CRUD & ACTOR PAGES STYLES
+   ========================================== */
+.actor-container {
+    margin: 90px auto 40px auto;
+    width: 90%;
+    max-width: 1100px;
+}
+
+/* Management Cards for splitting sections */
+.panel-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+}
+
+/* Styling Data Tables for viewing records */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #e0e0e0;
+    padding: 12px;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #34495e;
+    color: white;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Action Buttons for Edit / Delete */
+.btn-action {
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-edit { background-color: #f39c12; color: white; }
+.btn-edit:hover { background-color: #d35400; }
+.btn-delete { background-color: #e74c3c; color: white; }
+.btn-delete:hover { background-color: #c0392b; }
+.btn-add { background-color: #2ecc71; color: white; padding: 10px 15px; font-size: 14px;}
+.btn-add:hover { background-color: #27ae60; }
+
+/* Inline Form Layout styling */
+.inline-form {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-top: 15px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field label {
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.form-field input, .form-field select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Split layout for admin panels side-by-side */
+.admin-grid-two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 900px) {
+    .admin-grid-two-col {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==========================================
+   6. FUNCTIONALITIES MATRIX STYLES
+   ========================================== */
+.func-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.actor-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.badge-admin { background-color: #7f8c8d; color: white; }
+.badge-caregiver { background-color: #2980b9; color: white; }
+.badge-family { background-color: #27ae60; color: white; }
+
+.func-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 15px 0 0 0;
+}
+
+.func-list li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #e0e0e0;
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+.func-list li::before {
+    content: "✓";
+    color: #2ecc71;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+/* USER DROPDOWN STYLING */
+.user-menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.user-menu-btn {
+    background-color: #34495e;
+    color: #ffffff;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.user-menu-btn:hover {
+    background-color: #2c3e50;
+}
+
+.user-dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 120%;
+    background-color: #ffffff;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.user-dropdown-content.show {
+    display: block;
+}
+
+.dropdown-header {
+    padding: 12px 16px;
+    font-size: 12px;
+    color: #7f8c8d;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.user-dropdown-content a {
+    color: #e74c3c;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.user-dropdown-content a:hover {
+    background-color: #fceae9;
+}
+
+/* ==========================================================================
+   MODAL DIALOG STYLES
+   ========================================================================== */
+/* Note: this section used to re-declare body, .actor-container,
+   .admin-grid-two-col, .panel-card, .form-field, .data-table, and
+   .btn-action/.btn-add/.btn-edit/.btn-delete with different values.
+   Because it came later in the file, those duplicates silently overrode
+   the real rules above (see section 5) — most visibly, .actor-container
+   here only reserved 70px for the fixed navbar instead of 90px, which is
+   what was pushing page content up behind the navbar. Removed; only the
+   modal-specific rules (not defined anywhere else) are kept below. */
+
+.modal {
+    display: none; /* MUST BE NONE BY DEFAULT */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+}
+.modal-content {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    
+    /* Center box inside screen */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.modal-header h3 {
+    margin: 0;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
